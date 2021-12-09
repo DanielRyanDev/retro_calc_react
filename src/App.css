@@ -1,0 +1,100 @@
+@font-face { 
+  font-family: 'digital-7';
+  src: url('fonts/digital-7.woff') format('woff');
+}
+
+body {
+  background: black;
+}
+
+h1 {
+  color: rgba(0, 255, 0, 0.685);
+  font-family: digital-7;
+  font-style: normal;
+  font-size: 72px;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errorMsg {
+  opacity: 1;
+  background-color: rgba(255, 0, 0, 0.44);
+  color: white;
+  padding: 10px;
+  border-radius: 7px;
+  animation: fadeInUp 0.3s;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(40px);
+  }
+  25% {
+    opacity: 0.25;
+    transform: translateY(30px)
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(20px)
+  }
+  75% {
+    opacity: 0.75;
+    tranform: translateY(10px)
+  }
+
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.calcWrapper {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(224, 236, 117, 0.651);;
+  border-radius: 7px;
+}
+
+.screen {
+  font-family: digital-7;
+  font-weight: normal;
+  font-style: normal;
+  color: rgba(0, 255, 0, 0.685);
+  background: black;
+  margin-bottom: 5%;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas:
+    "clear clear clear ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    "zero zero . . ";
+  gap: 2px;
+}
+
+.btn {
+  height: 25px;
+  width: 50px;
+  box-sizing: border-box;
+}
+
+.clear {
+  grid-area: clear;
+  width: 158px;
+}
+
+.zero {
+  grid-area: zero;
+  width: 104px;
+}

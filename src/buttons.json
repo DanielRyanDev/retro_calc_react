@@ -1,0 +1,19 @@
+[
+    { "val": "clear", "style": "clear wide", "alias": "AC" },
+    { "val": "/", "style": "operator", "alias": "÷" },
+    { "val": 7, "style": "num" },
+    { "val": 8, "style": "num" },
+    { "val": 9, "style": "num" },
+    { "val": "*", "style": "operator", "alias": "x" },
+    { "val": 4, "style": "num" },
+    { "val": 5, "style": "num" },
+    { "val": 6, "style": "num" },
+    { "val": "-", "style": "operator" },
+    { "val": 1, "style": "num" },
+    { "val": 2, "style": "num" },
+    { "val": 3, "style": "num" },
+    { "val": "+", "style": "operator" },
+    { "val": 0, "style": "zero" },
+    { "val": ".", "style": "num" },
+    { "val": "=", "style": "operator" }
+  ]
